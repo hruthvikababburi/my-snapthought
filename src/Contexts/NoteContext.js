@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react';
+import { createContext } from 'react';
 
 const NoteContext = createContext();
 

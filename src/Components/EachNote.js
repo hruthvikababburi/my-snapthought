@@ -1,12 +1,21 @@
-import React from 'react'
-
-export default function EachNote() {
+import React, { useContext } from 'react'
+import NoteContext from '../Contexts/NoteContext'
+import { Link } from 'react-router-dom'
+export default function EachNote(props) {
+  const {deleteNote} = useContext(NoteContext)
+  const handleDeleteNote=()=>{
+    deleteNote(props.note.id)
+  }
   return (
+    
     <div className='each-note-cont'>
-        <h2 className='each-note'>Note 1</h2>
-        <button className='delete-note' title='Delete Note'>
+        <Link to={`/note/${props.note.id}`}>
+            <h2 className='each-note'>{props.note.title}</h2>
+        </Link>
+        <button className='delete-note' title='Delete Note' onClick={handleDeleteNote}>
             Delete
         </button>
     </div>
+   
   )
 }

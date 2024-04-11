@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import EachNote from './EachNote'
 import { Link } from 'react-router-dom';
+import NoteContext from '../Contexts/NoteContext';
 
 export default function HomePage() {
+  const {notes} = useContext(NoteContext)
   return (
     <div className='main-cont'>
       <div className='main-upper-cont'>
@@ -14,9 +16,10 @@ export default function HomePage() {
         </Link>
       </div>
       <input type='search' placeholder='Search Notes' className='input-search'/>
-      <EachNote/>
-      <EachNote/>
-      <EachNote/>
+      {notes.map((note)=>{
+        return (<EachNote key={note.id} note={note}/>)
+      })}
+      
 
       
       
