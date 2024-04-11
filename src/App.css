@@ -158,6 +158,7 @@
 }
 .image{
   width: 90%;
+  object-fit: cover;
 }
 
 .brief-note-cont{
@@ -169,13 +170,15 @@
 
 }
 .brief-note-title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+
 
 }
 .brief-note-description{
-
-}
-.img-vid-cont{
-
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: smaller;
+  font-weight: 100;
 }
 
 
@@ -221,20 +224,24 @@
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-  
-  
   }
   
   .each-note{
-  
-    
     font-size: large;
-    
-  
   }
   
   .delete-note{
   
   }
+  .brief-note-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
   
+  
+  }
+  .brief-note-description{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: 100;
+  }
 }

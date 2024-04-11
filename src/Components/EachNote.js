@@ -9,7 +9,7 @@ export default function EachNote(props) {
   return (
     
     <div className='each-note-cont'>
-        <Link to={`/note/${props.note.id}`}>
+        <Link to={`/note/${props.note.id}`} style={{ color: 'inherit', textDecoration: 'none' }}>
             <h2 className='each-note'>{props.note.title}</h2>
         </Link>
         <button className='delete-note' title='Delete Note' onClick={handleDeleteNote}>
