@@ -167,18 +167,58 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 
+}
+.brief-content-cont{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 }
 .brief-note-title{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: larger;
-
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
+  outline: none;
 
 }
 .brief-note-description{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: smaller;
   font-weight: 100;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
+  outline: none;
+}
+.brief-note-link{
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
+  outline: none;
+  
+  margin-bottom: 10px;
+  
+  
+}
+.save-changes-btn{
+  width:100px;
+  height: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  cursor: pointer;
+}
+.img-vid-cont{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -233,6 +273,9 @@
   .delete-note{
   
   }
+  .brief-content-cont{
+    margin: 60px;
+  }
   .brief-note-title{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
@@ -244,4 +287,5 @@
     font-size: large;
     font-weight: 100;
   }
+
 }
