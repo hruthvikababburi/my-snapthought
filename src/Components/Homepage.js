@@ -38,7 +38,7 @@ export default function HomePage() {
                     <EachNote key={note.id} note={note} />
                 ))
             ) : (
-                <div className='no-results-message'>No results found</div>
+                <div className='no-results-message'>There's nothing here!</div>
             )}
             
             <FloatingButton />
