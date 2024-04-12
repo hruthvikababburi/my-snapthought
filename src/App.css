@@ -158,6 +158,7 @@
   border-radius: 5px;
   outline: none;
   width: 80px;
+  cursor: pointer;
 }
 .video{
   width: 90%;

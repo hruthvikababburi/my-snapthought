@@ -99,7 +99,7 @@ const CreateNotepage = () => {
                 />
                 <div className="link-section">
                     <input
-                        type="text"
+                        type="search"
                         placeholder="Image/Video link"
                         value={link}
                         onChange={handleLinkChange}
