@@ -91,14 +91,14 @@ export default function EachDetailedNote() {
             </div>
             {brieflink && (
                 <div className='img-vid-cont'>
-                    {note.mediaType === 'image' ? (
+                    {briefMediaType === 'image' ? (
                         <img 
                             src={brieflink} 
                             alt={brieftitle} 
                             className='brief-image' 
                             style={{ width: '90%', height: 'auto',objectFit:'cover' }}
                         />
-                    ) : note.mediaType === 'video' ? (
+                    ) : briefMediaType === 'video' ? (
                         <ReactPlayer 
                             url={brieflink} 
                             controls 
