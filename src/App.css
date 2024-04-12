@@ -255,7 +255,12 @@
 .floating-button:hover {
   background-color: #371952; 
 }
-
+.no-results-message{
+  margin: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  color: #371952;
+}
 
 
 
@@ -409,6 +414,10 @@
     
     height: auto;
     width: auto;
+  }
+  .no-results-message{
+    margin: 150px;
+    font-size: x-large;
   }
 
 }
