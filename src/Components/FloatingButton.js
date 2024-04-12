@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// FloatingButton component
+import { FaPlus } from "react-icons/fa6";
+
 const FloatingButton = () => {
   return (
     <Link to='/create-note'>
           <button className='floating-button add-note-icon' title='Add Note'>
-              plus
+            <FaPlus />
           </button>
     </Link>
   );

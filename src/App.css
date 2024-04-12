@@ -76,6 +76,11 @@
 
 .delete-note{
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #e9e7f9;
+  font-size: larger;
+
 }
 
 .note-form{
