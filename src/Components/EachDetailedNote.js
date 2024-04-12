@@ -15,6 +15,7 @@ export default function EachDetailedNote() {
     const [brieftitle,setBriefTitle] = useState(note.title)
     const [briefdescription,setBriefDescription] = useState(note.description)
     const [brieflink,setBriefLink] = useState(note.link)
+    const [briefMediaType,setBriefMediaType] = useState(note.mediaType)
 
 
 
@@ -30,6 +31,18 @@ export default function EachDetailedNote() {
   // Handle link change
   const handleBriefLinkChange = (event) => {
       setBriefLink(event.target.value);
+      if (event.target.value) {
+        if (event.target.value.endsWith('.jpg') || event.target.value.endsWith('.png') || event.target.value.endsWith('.gif') || event.target.value.endsWith('.jpeg')) {
+            setBriefMediaType('image');
+        } else if (ReactPlayer.canPlay(event.target.value)) {
+            setBriefMediaType('video');
+        } else {
+            setBriefMediaType(null);
+        }
+    } else {
+        setBriefMediaType(null);
+    }
+
   };
 
   const handleSaveChanges = () => {
@@ -39,6 +52,7 @@ export default function EachDetailedNote() {
         title: brieftitle,
         description:briefdescription,
         link: brieflink,
+        mediaType: briefMediaType
         // Include other properties that may need to be updated
     };
 
