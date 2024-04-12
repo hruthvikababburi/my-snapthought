@@ -112,6 +112,7 @@
 }
 .link-section{
   margin-top: 10px;
+  align-self: flex-start;
 }
 .input-link{
   font-size: smaller;
@@ -243,8 +244,7 @@
   .main-upper-cont{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  
+   align-items: center;
   }
   
   .title{
@@ -263,19 +263,90 @@
     font-size: smaller;
   }
   .each-note-cont{
-    
     margin-top: 10px;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
   }
-  
   .each-note{
     font-size: large;
   }
   
   .delete-note{
   
+  }
+  .note-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #eceafd;
+    min-height: 100vh;  
+  }
+  .input-title{
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    outline: none;
+    font-size: large;
+    background-color: transparent;
+    width: 50%;
+  }
+  .input-description{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #3f3b5a;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    width: 60%;
+  
+  }
+  .link-section{
+    margin-top: 10px;
+    align-self: flex-start;
+  }
+  .input-link{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+    padding: 5px;
+    border: 1px solid #3f3b5a;
+    outline: none;
+  }
+  .add-media-btn{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid #3f3b5a;
+    padding: 5px;
+    margin-left: 2px;  
+  }
+  
+  .media-preview{
+    
+    margin-top: 10px;
+    padding: 5px;
+    width: 400px;
+    
+  }
+  .color-picker{
+    font-size: smaller;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  .submit-button{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #3f3b5a;
+    border-radius: 5px;
+    outline: none;
+    width: 80px;
   }
   .brief-content-cont{
     margin: 60px;

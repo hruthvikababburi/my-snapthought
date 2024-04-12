@@ -86,7 +86,7 @@ export default function EachDetailedNote() {
             <div className='brief-content-cont'>
               <input type='text' className='brief-note-title' value={brieftitle} onChange={handleBriefTitleChange}/>
               <textarea className='brief-note-description' value={briefdescription} rows={8} onChange={handleBriefDescriptionChange}/>
-              <input type='text' className='brief-note-link' value={brieflink} onChange={handleBriefLinkChange}/>
+              <input type='search' className='brief-note-link' value={brieflink} onChange={handleBriefLinkChange}/>
               <button className='save-changes-btn' onClick={handleSaveChanges}>Save</button>
             </div>
             {brieflink && (

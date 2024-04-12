@@ -93,7 +93,7 @@ const CreateNotepage = () => {
                     placeholder="Description"
                     value={description}
                     onChange={handleDescriptionChange}
-                    rows={5}
+                    rows={8}
                     className='input-description'
                     required
                 />
